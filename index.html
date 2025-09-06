@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akankshya's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/99dec13203.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!----------------header------------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Akankshya_logo_copy.png" alt="A logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer and Cloud Enthusiast</p>
+                <h1>Hello World,<br> I'm <span>Akankshya Pattnaik</span> <br> welcome to my digital space</h1>
+            </div>
+        </div>
+    </div>
+<!----------------about--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_5456.JPG" alt="about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>As a dedicated Web Developer and Cloud Computing enthusiast, I've honed my skills to build innovative solutions that span both front-end and back-end technologies. My portfolio showcases my ability to create responsive and intuitive user interfaces, as demonstrated by my personal portfolio website and a detailed clone of the Travelocity website. <p>Beyond web development, I have a deep interest in machine learning, and I've applied my skills to a project that predicts the likelihood of divorce, utilizing various ML algorithms.</p> <p>As a Cloud Engineer, I've designed and deployed scalable AWS architectures and built robust CI/CD pipelines for automating software deployments, which you can explore in my DevOps project. My technical expertise is complemented by strong leadership skills and a passion for collaborative problem-solving. I thrive in team environments and am always eager to take on new challenges and learning opportunities to build impactful solutions.</p></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                             <li><i class="fa-solid fa-laptop-code"></i> <span>WEB Development</span><br>Developing responsive and innovative web apps</li>
+                            <li><i class="fa-regular fa-cloud"></i> <span>Cloud Computing</span><br>Developing full CI/CD pipelines</li>
+                            <li><i class="fa-solid fa-code"></i> <span>Data Structure</span><br>Using JAVA</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>DevOps Masters</span><br>From Ingenious TechWorld</li>
+                            <li><span>MERN Stack</span><br>From CodeBeat</li>
+                            <li><span>AWS Masters</span><br>From Ingenious TechWorld</li>
+                            <li><span>DBMS Fundamentals And Advanced Concepts</span><br>From Scaler</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>Btech. in Computer Engineering from Silicon University, Bhubaneswar</li>
+                            <li><span>2020-2022</span><br>Intermediate from MBS Public School</li>
+                            <li><span>2019-2020</span><br>Matriculation from MBS Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----------------services----------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i> 
+                <h2>Web Development</h2>
+                <p>As a web developer, I designed and built a personal portfolio website to showcase my skills. I also honed my front-end development abilities by cloning the Travelocity website, focusing on replicating its layout and user interface.</p>
+                <a href="https://github.com/Akankshya02">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Cloud Computing</h2>
+                <p>I built a robust CI/CD pipeline to automate the software development lifecycle, ensuring faster and more reliable deployments. I also designed and deployed a scalable and resilient AWS architecture, utilizing services like EC2, S3, Load Balancers, and Route 53.</p>
+                <a href="https://github.com/Akankshya02">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/rx-blog-header-devops-pipeline.png" alt="devops">
+                <div class="layer">
+                    <h3>Devops Project</h3>
+                    <p>Implemented a full CI/CD pipeline through hithub actions using terraform, dockerized the application and made deployments through kubernetes.</p>
+                    <a href="https://github.com/Akankshya02/devops-project-repo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg" alt="AI/ML">
+                <div class="layer">
+                    <h3>Predicting the likelihood of divorce</h3>
+                    <p>Used machine learning algorithms on a dataset of relationship behaviors and attributes to predict the likelihood of divorce.</p>
+                    <a href="https://github.com/Akankshya02/divorce-likelihood-prediction"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/travelocity.png" alt="MERN">
+                <div class="layer">
+                    <h3>TraveloCity Website Clone</h3>
+                    <p>Created a sleek and user-friendly travel booking platform where users can easily search for, compare, and book flights and accommodations worldwide.</p>
+                    <a href="https://github.com/Swastik124/Travelocity-Web-Application"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/aws.jpg" alt="AWS">
+                <div class="layer">
+                    <h3>AWS Architecture Project</h3>
+                    <p>Designed and implemented a full-stack web application on AWS using a VPC for network isolation, EC2 instances behind a Load Balancer for scalability, S3 for static content hosting, and Route 53 for custom domain management.</p>
+                    <a href="https://github.com/Akankshya02/project-on-AWS"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------contact------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><a href="mailto:akankshyapattnaik5@gmail.com"><i class="fa-solid fa-envelope"></i></a>akankshyapattnaik5@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +91 8249010448</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/akankshya-pattnaik-687503211/"><i class="fa-brands fa-square-linkedin"></i></a>
+                    <a href="https://github.com/Akankshya02"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/akankshya.here/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/akankshya.pattnaik.129"><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                <a href="images/Akankshya_Pattnaik_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> Copyright © 2025 Akankshya Pattnaik. All rights reserved.</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx4J8HYbt4bEfxj-_WquFfOxl0_ALDfC20fsmwvDHQ9MKDHYy3B_AnEYjc5QoYw8HiA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully !"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
